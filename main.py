@@ -14,7 +14,7 @@ class MainWindow(QMainWindow, uic.loadUiType(UI_PATH)[0]):
         self.init_ui()
 
     def init_ui(self):
-        pass
+        self.push_button_example.clicked.connect(self.example_method)
 
 
 if __name__ == "__main__":
